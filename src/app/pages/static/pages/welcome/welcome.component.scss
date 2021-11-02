@@ -1,0 +1,13 @@
+@import '../../../../../styles/fonts';
+@import '../../../../../styles/colors';
+
+.app-welcome {
+  p {
+    clear: both;
+    margin-bottom: 10px;
+    span {
+      font-size: $base-font-size18;
+      color: $primary-dark;
+    }
+  }
+}

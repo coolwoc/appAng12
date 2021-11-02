@@ -1,0 +1,9 @@
+<div class="app-page">
+    <app-header *ngIf="isAuth"></app-header>
+    <div class="app-page__content">
+        <router-outlet></router-outlet>
+    </div>
+    <div class="app-page__footer" *ngIf="isAuth">
+        <p>&copy; 2021 - coolwoc <span>for Hiberos</span></p>
+    </div>
+</div>

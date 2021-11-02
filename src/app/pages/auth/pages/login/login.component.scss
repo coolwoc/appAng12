@@ -1,0 +1,48 @@
+@import '../../../../../styles/colors';
+@import '../../../../../styles/fonts';
+
+.app-login {
+  max-width: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &__header {
+    overflow: hidden;
+    margin-bottom: 20px;
+    .app-img_logo {
+      width: 90px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      filter: invert(47%) sepia(87%) saturate(5894%) hue-rotate(168deg) brightness(95%) contrast(101%);
+    }
+    h1 {
+      line-height: 0;
+      color: $primary;
+      text-align: center;
+    }
+  }
+  &__actions {
+    clear: both;
+    p {
+      font-size: $base-font-size12;
+      a {
+        color: $primary-dark;
+        border-bottom: 1px solid $primary-dark;
+        margin-bottom: 3px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__copy {
+    font-size: $base-font-size10;
+    color: $on-base;
+    text-align: center;
+    margin-bottom: auto;
+  }
+  form {
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+}

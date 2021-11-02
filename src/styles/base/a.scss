@@ -1,0 +1,19 @@
+.app-a {
+  color: $primary;
+  transition: 0.25s;
+  margin-right: 1em;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-dark;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $primary-dark;
+  }
+
+  &__active {
+    color: $primary-dark;
+    padding-bottom: 3px;
+    border-bottom: 1px solid $primary-dark;
+  }
+}

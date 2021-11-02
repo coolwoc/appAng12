@@ -1,0 +1,16 @@
+@import './colors.scss';
+@import './fonts.scss';
+
+.mat-snack_error {
+  padding-top: 10px;
+  font-size: $base-font-size14;
+  color: $on-error;
+  background-color: $error;
+}
+
+.mat-snackbar_success {
+  padding-top: 10px;
+  font-size: $base-font-size14;
+  color: $on-success;
+  background-color: $success;
+}

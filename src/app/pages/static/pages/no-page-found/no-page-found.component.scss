@@ -1,0 +1,15 @@
+@import '../../../../../styles/colors';
+@import '../../../../../styles/fonts';
+
+.app-notFound {
+  max-width: 500px;
+  margin: 0 auto;
+  h2 {
+    margin-bottom: 0;
+  }
+  .error {
+    color: $error;
+    font-size: $base-font-size20;
+    margin-bottom: 20px;
+  }
+}

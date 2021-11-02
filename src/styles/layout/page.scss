@@ -1,0 +1,35 @@
+.app-page {
+  max-width: 1800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
+  background: $base-light;
+  border: 1px solid $base-dark;
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid transparent;
+  padding: 32px;
+  height: 100%;
+
+
+  &__header {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  &__content {
+    padding: 20px;
+    height: calc(100vh - 225px);
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: center;
+    p {
+      font-size: $base-font-size12;
+      span {
+        font-size: $base-font-size10;
+      }
+    }
+  }
+}

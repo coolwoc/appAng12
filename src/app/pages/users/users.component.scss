@@ -1,0 +1,28 @@
+@import '../../../styles/fonts';
+
+.app-users {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  position: relative;
+  table {
+    width: 100%;
+    font-size: $base-font-size12;
+  }
+  
+  td.mat-cell,
+  th.mat-header-cell {
+    padding-right: 20px;
+    padding-top: 15px;
+  }
+  
+  th.mat-header-cell {
+    font-size: $base-font-size;
+    
+  }
+
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+
+}

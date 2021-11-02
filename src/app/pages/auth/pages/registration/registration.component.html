@@ -1,0 +1,35 @@
+<div class="app-registration">
+  <div class="app-registration">
+    <h2>Sign up</h2>
+  </div>
+
+  <form [formGroup]="form" (submit)="onSubmit()" (key.enter)="onSubmit()" novalidate autocomplete="off">
+    <app-form-field label="Name" [required]="true" [control]="form.controls.name">
+      <app-input formControlName="name"></app-input>
+    </app-form-field>
+
+    <app-form-field label="Surname" [required]="true" [control]="form.controls.surname">
+      <app-input formControlName="surname"></app-input>
+    </app-form-field>
+
+    <app-form-field label="Email" [required]="true" [control]="form.controls.email" [patternError]="regexErrors.email">
+      <app-input formControlName="email"></app-input>
+    </app-form-field>
+
+    <app-form-field label="Password" [required]="true" [control]="form.controls.password" [patternError]="regexErrors.password">
+      <app-input formControlName="password"></app-input>
+    </app-form-field>
+
+    <app-form-field label="Confirm Password" [required]="true" [control]="form.controls.confirmPassword" [patternError]="regexErrors.password">
+      <app-input formControlName="confirmPassword"></app-input>
+    </app-form-field>
+
+    <div class="error" *ngIf="f.confirmPassword.errors">
+      <p *ngIf="f.confirmPassword.errors.matching">Password and Confirm Password must be match.</p>
+    </div>
+
+
+    <app-button type="submit">Register</app-button>
+
+  </form>
+</div>

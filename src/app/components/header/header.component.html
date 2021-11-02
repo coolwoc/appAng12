@@ -1,0 +1,17 @@
+<div class="header">
+
+  <h1><a routerLink="static/welcome" class="logo"><span>GoToHome</span></a></h1>
+
+  <div class="header__details">
+
+    <div class="header__user"><span>Bienvenid@s&nbsp;</span>{{user}}</div>
+
+    <ul class="header__menu">
+      <li><a routerLink="users" routerLinkActive="app-a__active" class="app-a">Users</a></li>
+      <li><a routerLink="auth/registration" routerLinkActive="app-a__active" class="app-a">Registration</a></li>
+      <li><a class="app-a" (click)="logout()">Log out</a></li>
+    </ul>
+
+  </div>
+
+</div>

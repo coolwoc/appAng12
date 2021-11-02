@@ -1,0 +1,69 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+@import '../../../styles/mixin/mixinBreakpoints';
+
+.header {
+  height: 163px;
+  padding: 5px 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  @include for-size(medium) {    
+    display: block;
+    overflow: initial;
+  }
+
+  .logo {
+    display: block;
+    width: 85px;
+    height: 110px;
+    background: transparent url('../../../assets/images/logo/Logo-150x220.svg') 0 0 / 80px auto no-repeat;
+    filter: invert(47%) sepia(87%) saturate(5894%) hue-rotate(168deg) brightness(95%) contrast(101%);
+
+    @include for-size(medium) {    
+      width: 60px;
+      height: 60px;
+      background: transparent url('../../../assets/images/logo/Logo-150x220.svg') 0 0 / 60px auto no-repeat;
+    }
+
+    &:hover {
+      filter: invert(55%) sepia(90%) saturate(1490%) hue-rotate(144deg) brightness(93%) contrast(101%);
+    }
+
+    span {
+      display: block;
+      text-indent: -100000000000px;
+    }
+  }
+
+  &__details {
+    margin-top: auto;
+  }
+
+  &__user {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    color: $primary-dark;
+    font-size: $base-font-size12;
+    padding: 4px 10px;
+    border-radius: 3px;
+    background-color: $base-dark;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: $base-font-size14;
+    @include for-size(medium) {    
+      justify-content: initial;
+    }
+    li {
+      display: block;
+      list-style-type: none;
+    }
+  }
+  
+}
